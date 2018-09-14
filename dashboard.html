@@ -1,0 +1,2566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JDVault</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <!--Font Awesome Icons-->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/> -->
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+    <!-- Custom Styles -->
+    <link type="text/css" rel="stylesheet" href="assets/css/styles.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/responsive.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/animate.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+     <!-- <link type="text/css" rel="stylesheet" href="assets/css/dropzone.css"  media="screen,projection"/>  -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body class="sidebar-mini">
+
+  <!-- floating, up icon -->
+    <div id="fixed-up-btn" class="fixed-action-btn">
+      <a class="btn-floating btn-large ">
+        <span></span>
+      </a>
+    </div>
+
+    <div id="bodyOverlay"></div>
+
+    <!-- Top Navigation -->
+    <nav class="topNavBar">
+      <!-- Preloader -->
+      <div id="preloader"></div>
+      <div class="nav-wrapper center">
+         <!-- Toggle Menu Link -->
+         <ul class="left hide-on-med-and-down">
+            <li class="toggleMenu">
+              <a href="#" class="menu-link center-align">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              <!-- <i class="material-icons">menu</i> -->
+              </a>
+            </li>
+            <li>
+              <!-- Logo -->
+              <div class="brand-logo">
+                <a href="#" class="left-align">
+                <!-- <img src="assets/images/brand-logos/2adpro.png" alt="2adpro">  -->
+                <img src="assets/images/brand-logos/JDVault_Logo.svg" alt="logo" />
+                </a>
+              </div>
+            </li>
+          </ul>
+        
+        <!-- Search -->
+        <div class="search-container">
+                <div class="search">
+                  <div class="input-field clearable">
+                    <i class="material-icons prefix">search</i>
+                    <input placeholder="Search" id="search" type="text" class="validate"  autocomplete="off">
+                    <span class="search-clear"></span>
+                  </div>
+                  <!-- Search Results dropdown -->
+                  <div class="search-dropdown">
+                      <span class="arrow-up"></span>
+                      <div class="search-results left-align" id="search-listing">
+                          <div class="collection-header">
+                            <h5>
+                              <i class="material-icons  grey-text text-lighten-1">image_aspect_ratio</i>
+                              Results for Car
+                              <label>15</label>
+                            </h5>
+                          </div>
+                          <ul class="collection dropdown-list">
+                            <li class="collection-item avatar">
+                              <a href="#">
+                                <div class="avatar-img">
+                                  <img src="assets/images/car-icn.png" alt="">
+                                </div>
+                                <span class="title">Stockphoto of Cars</span>
+                                <label class="img-format" data-format="JPG">JPG</label>
+                              </a>
+                            </li>
+                            <li class="collection-item avatar">
+                              <a href="#">
+                                <div class="avatar-img">
+                                  <img src="assets/images/car-icn.png" alt="">
+                                </div>
+                                <span class="title">Chevrolet Beat</span>
+                                <label class="img-format" data-format="MP3">MP3</label>
+                              </a>
+                            </li>
+                            <li class="collection-item avatar">
+                              <a href="#">
+                                <div class="avatar-img">
+                                  <img src="assets/images/car-icn.png" alt="">
+                                </div>
+                                <span class="title">Toyoto Innova</span>
+                                <label class="img-format" data-format="MP4">MP4</label>
+                              </a>
+                            </li>
+                            <li class="collection-item avatar">
+                              <a href="#">
+                                <div class="avatar-img">
+                                  <img src="assets/images/car-icn.png" alt="">
+                                </div>
+                                <span class="title">Honda Amaze, Honda Jazz</span>
+                                <label class="img-format" data-format="JPG">JPG</label>
+                              </a>
+                            </li>
+                            <li class="collection-item avatar">
+                              <a href="#">
+                                <div class="avatar-img">
+                                  <img src="assets/images/car-icn.png" alt="">
+                                </div>
+                                <span class="title">Stockphoto of Cars</span>
+                                <label class="img-format" data-format="JPG">JPG</label>
+                              </a>
+                            </li>
+                            <li class="collection-item avatar">
+                              <a href="#">
+                                <div class="avatar-img">
+                                  <img src="assets/images/car-icn.png" alt="">
+                                </div>
+                                <span class="title">Chevrolet Beat</span>
+                                <label class="img-format" data-format="MP3">MP3</label>
+                              </a>
+                            </li>
+                            <li class="collection-item avatar">
+                              <a href="#">
+                                <div class="avatar-img">
+                                  <img src="assets/images/car-icn.png" alt="">
+                                </div>
+                                <span class="title">Toyoto Innova</span>
+                                <label class="img-format" data-format="MP4">MP4</label>
+                              </a>
+                            </li>
+                            <li class="collection-item avatar">
+                              <a href="#">
+                                <div class="avatar-img">
+                                  <img src="assets/images/car-icn.png" alt="">
+                                </div>
+                                <span class="title">Honda Amaze, Honda Jazz</span>
+                                <label class="img-format" data-format="JPG">JPG</label>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                  </div>
+                </div>
+        </div>
+
+        <!-- Top Nav right links -->
+        <ul class="right hide-on-med-and-down navSideMenu">
+          <li class="dropdown plainPop">
+              <a href="#" class='hover-link tooltipped appsmenutooltip' data-position="bottom">
+                <span class="tooltiptext">Apps</span>
+                <span class="appMenuWrapBtn navTooltip"></span>
+              </a>
+              <div class="dropdown-contents appsMenu">
+                <ul class="dropdown-menu" >
+                  <span class="arrow-up"></span>
+                    <li><a href="#" target="_blank">JD</a></li>
+                    <li><a href="#" target="_blank">JD-flow</a></li>
+                    <li><a href="#" target="_blank">JD-traffic</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="#" class="hover-link tooltipped navsmenutooltip" data-position="bottom">
+                <span class="tooltiptext">Notification</span>
+                  <span class="notificBtn navTooltip"></span>
+              </a>
+            </li>
+            <li class="dropdown plainPop">
+              <a href="#" class='hover-link tooltipped' data-position="bottom">
+                <span class="tooltiptext">User</span>
+                  <span class="profileMenuBtn navTooltip"></span>
+              </a>
+              <div class="dropdown-contents mt1 dropdown-right profileMenuWrap">
+                <ul class="dropdown-menu profileMenu">
+                    <span class="arrow-up"></span>
+                    <li class="header"><a href="#"><i class="fas fa-user"></i> Mukesh Bhavsar</a></li>
+                    <li><a href="#"><i class="fas fa-pencil-alt"></i> Edit Profile</a></li>
+                    <!-- <li><a href="#"><i class="fas fa-globe"></i> Language</a></li> -->
+                    <li class="footer"><a href="login.html" class="btn btn-primary btn-small">Logout</a></li>
+                </ul>
+              </div>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- Side Bar -->
+    <aside class="sidebar">
+      <div id="sideNav" class="side-menu open">
+        <ul class="list tabs" id="sideNavTab">
+          <li class="tab">
+            <a href="#assetsView" class="active">
+              <div class="spriteWrap">
+                <span class="menuSprite asset"></span>
+              </div>
+              <p>Assets</p>
+            </a>
+          </li>
+          <li class="tab">
+            <a href="#batchDetails" class="">
+              <div class="spriteWrap">
+                <span class="menuSprite batchDet"></span>
+              </div>
+              <p>Batch Details</p>
+            </a>
+          </li>
+          <!-- <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+                <li class="bold">
+                    <a class="collapsible-header waves-effect waves-cyan">
+                        <i class="material-icons">pie_chart</i>
+                        <p>Insights <i class="material-icons right no-margin">keyboard_arrow_right</i></p> 
+                    </a>
+                    <div class="collapsible-body" style="display: none;">
+                        <ul>
+                            <li class="active"><a href="#">Asset List</a></li>
+                            <li><a href="#">Download History</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            </li> -->
+          <li class="tab">
+            <a href="#reports" class="">
+              <div class="spriteWrap">
+                <span class="menuSprite report"></span>
+              </div>
+              <p>Reports</p>
+            </a>
+          </li>
+          <li class="tab">
+            <a href="#settings" class="">
+              <div class="spriteWrap">
+                <span class="menuSprite setting"></span>
+              </div>
+              <p>Settings</p>
+            </a>
+          </li>
+        </ul>
+
+        <!-- <div class="logo-footer">
+          <img src="assets/images/brand-logos/logo.png" alt="logo">
+        </div> -->
+      </div>
+    </aside>
+
+    <!-- Main Content panel -->
+    <main class="main-panel rhs" id="assetsView">
+
+      <!-- file popup -->
+      <div id="assetFilePopup" class="white modal fullscreen">
+
+        <div class="modal-content">
+
+            <div class="row assetFPPTopFixed">
+
+              <div class="title">
+
+                <div class="col s6 selectBox">
+                  <!-- <span class="selected">3</span><span class='results'>3</span> Results -->
+                    <span class="total-assets">Showing <b class="assetCount">12</b> Assets</span>
+                </div>
+
+                <div class="col s6 selectBoxAll right-align">
+                  <div class="dropdown plainPop right">
+
+                    <a class="hover-link" href="#" data-target="fileselect-options" id="selected-files">
+                        <input class="filled-in" type="checkbox">
+                        <span>Select</span><label></label><i class="material-icons">arrow_drop_down</i>
+                    </a>
+
+                    <div class="dropdown-content dropdown-contents" id="fileselect-options">
+                        <ul class="dropdown-list" tabindex="0">
+                          <span class="arrow-up"></span>
+                          <li>
+                            <a href="#" name="Selected all" id="selectfile-all">
+                              <span>Select all</span>
+                              <label>3</label>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" name="Select" id="selectfile-none">
+                                <span>Select none</span>
+                            </a>
+                          </li>
+                        </ul>
+                    </div>                    
+                  </div>
+                </div>
+
+              </div>
+              
+              <div class="closeModal right-align">
+                <div class="modal-close full">
+                  <i class="material-icons">close</i>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row noBottom">
+              <div class="white fileListSide">
+
+                <div class="clearfix afpThumbnails">
+                   
+                    <div class="card small">
+                      <div class="card-overlay">
+                        <div class="select">
+                          <label>
+                            <input type="checkbox" class="filled-in" name="Car">
+                            <span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="card-image">
+                        <img src="assets/images/thumbnails/113.jpg">
+                        <span class="card-title left clearFile"><i class="small material-icons clear">clear</i></span>
+                        <span class="card-title right"><span class="badge img-format" data-format="JPG">JPG</span></span>
+                      </div>
+                      <div class="card-content">
+                        <span class="file-name">Title</span>
+                        <input name="filetitle[]" type="text" class="validate">
+                        <span class="file-name cardContentSubtitle">Optional Fields</span>
+                      </div>
+                    </div>
+                   
+                    <div class="card small">
+                      <div class="card-overlay">
+                        <div class="select">
+                          <label>
+                            <input type="checkbox" class="filled-in" name="Car">
+                            <span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="card-image">
+                        <img src="assets/images/thumbnails/114.jpg">
+                        <span class="card-title left clearFile"><i class="small material-icons clear">clear</i></span>
+                        <span class="card-title right"><span class="badge img-format" data-format="JPG">JPG</span></span>
+                      </div>
+                      <div class="card-content">
+                        <span class="file-name">Title</span>
+                        <input name="filetitle[]" type="text" class="validate">
+                        <span class="file-name cardContentSubtitle">Optional Fields</span>
+                      </div>
+                    </div>
+                   
+                    <div class="card small">
+                      <div class="card-overlay">
+                        <div class="select">
+                          <label>
+                            <input type="checkbox" class="filled-in" name="Car">
+                            <span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="card-image">
+                        <img src="assets/images/thumbnails/115.jpg">
+                        <span class="card-title left clearFile"><i class="small material-icons clear">clear</i></span>
+                        <span class="card-title right"><span class="badge img-format" data-format="JPG">JPG</span></span>
+                      </div>
+                      <div class="card-content">
+                        <span class="file-name">Title</span>
+                        <input name="filetitle[]" type="text" class="validate">
+                        <span class="file-name cardContentSubtitle">Optional Fields</span>
+                      </div>
+                    </div>
+                   
+                    <div class="card small">
+                      <div class="card-overlay">
+                        <div class="select">
+                          <label>
+                            <input type="checkbox" class="filled-in" name="Car">
+                            <span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="card-image">
+                        <img src="assets/images/filethumbs/f1.jpg">
+                        <span class="card-title left clearFile"><i class="small material-icons clear">clear</i></span>
+                        <span class="card-title right"><span class="badge img-format" data-format="JPG">JPG</span></span>
+                      </div>
+                      <div class="card-content">
+                        <span class="file-name">Title</span>
+                        <input name="filetitle[]" type="text" class="validate">
+                        <span class="file-name cardContentSubtitle">Optional Fields</span>
+                      </div>
+                    </div>
+                   
+                    <div class="card small">
+                      <div class="card-overlay">
+                        <div class="select">
+                          <label>
+                            <input type="checkbox" class="filled-in" name="Car">
+                            <span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="card-image">
+                        <img src="assets/images/filethumbs/f2.jpg">
+                        <span class="card-title left clearFile"><i class="small material-icons clear">clear</i></span>
+                        <span class="card-title right"><span class="badge img-format" data-format="JPG">JPG</span></span>
+                      </div>
+                      <div class="card-content">
+                        <span class="file-name">Title</span>
+                        <input name="filetitle[]" type="text" class="validate">
+                        <span class="file-name cardContentSubtitle">Optional Fields</span>
+                      </div>
+                    </div>
+                   
+                    <div class="card small">
+                      <div class="card-overlay">
+                        <div class="select">
+                          <label>
+                            <input type="checkbox" class="filled-in" name="Car">
+                            <span></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="card-image">
+                        <img src="assets/images/filethumbs/f3.jpg">
+                        <span class="card-title left clearFile"><i class="small material-icons clear">clear</i></span>
+                        <span class="card-title right"><span class="badge img-format" data-format="JPG">JPG</span></span>
+                      </div>
+                      <div class="card-content">
+                        <span class="file-name">Title</span>
+                        <input name="filetitle[]" type="text" class="validate">
+                        <span class="file-name cardContentSubtitle">Optional Fields</span>
+                      </div>
+                    </div>
+
+                </div>
+
+              </div>
+
+
+              <div class="fileDetailSide">
+
+                  <h5>Uploading Files</h5><hr>
+                    <form id="uploadFileForm" name="uploadFileForm">
+
+                    <ul class="collapsible">
+
+                      <li class="checkTag">
+                        <div class="multiDropdownTag collapsible-header" data-target="fileUploadDesc1" data-name="Description"><span class="sprite menuPrefix mDTDesc"></span>Description<span class="sprite menuEnd mDTPtr rotate right"></span><span class="sprite menuEnd mDTEye right collapHeadIcon"></span></div>
+                        <div class="input-field noTop collapsible-body" id="fileUploadDesc1">
+                          <textarea name="fileUploadDesc" placeholder="Description goes here" class="materialize-textarea fileUploadDesc" data-length="120"></textarea>
+                        </div>
+                      </li>
+
+                      <li class="checkTag">
+                        <div class="multiDropdownTag collapsible-header" data-target="selectCheckbox3" data-name="Category" data-render="checkbox"><span class="sprite menuPrefix mDTTree"></span>Category<span class="sprite menuEnd mDTPtr rotate right"></span><span class="sprite menuEnd mDTEye right collapHeadIcon"></span></div>
+                        <div class="chipsWrap"></div>
+                        <div class="selectCheckbox collapsible-body" id="selectCheckbox3">
+
+                        <div class="dpSearch input-field clearable">
+                          <i class="material-icons prefix">search</i>
+                          <input type="text" placeholder="Search" id="categorySearch">
+                        </div>
+
+                        <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Real Estate</span>
+                            </label>
+                            </p>
+                            <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Entertainment</span>
+                            </label>
+                            </p>
+                            <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Education</span>
+                            </label>
+                            </p>
+                            <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Automotive</span>
+                            </label>
+                            </p>
+                            <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Health & Fitness</span>
+                            </label>
+                            </p>
+                            <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Travel</span>
+                            </label>
+                            </p>
+                            <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Games</span>
+                            </label>
+                            </p>
+                            <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Wedding</span>
+                            </label>
+                            </p>
+                            <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Events</span>
+                            </label>
+                            </p>
+                            <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Festival</span>
+                            </label>
+                            </p>
+                            <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Movies</span>
+                            </label>
+                            </p>
+                            <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Equipments</span>
+                            </label>
+                            </p>
+                            <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Bike</span>
+                            </label>
+                            </p>
+                            <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Bicycle</span>
+                            </label>
+                            </p>
+                        </div>
+                      </li>
+
+<!-- 
+                      <li class="checkTag">
+                        <div class="multiDropdownTag collapsible-header" data-target="selectCheckbox1" data-name="Media type" data-render="checkbox">MEDIA TYPE <i class="material-icons right rotate">keyboard_arrow_right</i><img class="right collapHeadIcon" src="assets/images/icons/view-slash-icn.png" alt="eye"></div>
+                        <div class="chipsWrap"></div>
+                        <hr>
+                        <div class="selectCheckbox collapsible-body" id="selectCheckbox1">
+                          <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Digital</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Print</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Mobile</span>
+                            </label>
+                          </p>
+                        </div>
+                      </li> -->
+
+
+                      <li class="checkTag">
+                        <div class="multiDropdownTag collapsible-header" data-target="selectCheckbox2" data-name="Asset type" data-render="checkbox"><span class="sprite menuPrefix mDTTree"></span>Asset type<span class="sprite menuEnd mDTPtr rotate right"></span><span class="sprite menuEnd mDTEye right collapHeadIcon"></span></div>
+                        <div class="chipsWrap"></div>
+                        <div class="selectCheckbox collapsible-body" id="selectCheckbox2">
+
+                        <div class="dpSearch input-field clearable">
+                          <i class="material-icons prefix">search</i>
+                          <input type="text" placeholder="Search" id="categorySearch">
+                        </div>
+
+                          <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Publication</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Magazine</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Newspaper</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">E-Paper</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input type="checkbox" class="filled-in" />
+                              <span class="listItem">Cinema</span>
+                            </label>
+                          </p>
+                        </div>
+                      </li>
+
+
+                      <li class="checkTag">
+                        <div class="multiDropdownTag collapsible-header" data-target="selectCheckbox4" data-name="Country" data-render="checkbox"><span class="sprite menuPrefix mDTTree"></span>Country<span class="sprite menuEnd mDTPtr rotate right"></span><span class="sprite menuEnd mDTEye right collapHeadIcon"></span></div>
+                        <div class="chipsWrap"></div>
+                        <div class="selectCheckbox collapsible-body countrySelectStyle" id="selectCheckbox4">
+
+                        <div class="dpSearch input-field clearable">
+                          <i class="material-icons prefix">search</i>
+                          <input type="text" placeholder="Search" id="categorySearch">
+                        </div>
+
+                          <div class="dpHeader">UNITED STATES</div>
+                          <p>
+                            <label>
+                              <input type="radio" checked class="filled-in active" name="country"/>
+                              <span class="listItem">Virginia</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input type="radio" class="filled-in" name="country"/>
+                              <span class="listItem">Texas</span>
+                            </label>
+                          </p>
+                        </div>
+                      </li>
+
+                      <li class="checkTag dMod">
+                      <div class="multiDropdownTag dMod collapsible-header" data-name="Tags"><span class="sprite menuPrefix mDTTree"></span>Tags<span class="sprite menuEnd mDTPtr rotate right"></span><span class="sprite menuEnd mDTEye right collapHeadIcon"></span></div>
+                      <div class="collapsible-body selectCheckbox">
+                      <div id="uploadTag" class="chips dMod"></div></div>
+                      </li>
+
+                      <li class="checkTag">
+                        <div class="multiDropdownTag collapsible-header" data-target="selectCheckbox5" data-name="Publication date" data-render="checkbox"><span class="sprite menuPrefix mDTTree"></span>Add publication date<span class="sprite menuEnd mDTPtr rotate right"></span><span class="sprite menuEnd mDTEye right collapHeadIcon"></span></div>
+                        <div class="chipsWrap"></div>
+                        <div class="selectCheckbox collapsible-body" id="selectCheckbox5">
+                          
+                        </div>
+                      </li>
+
+                      <li class="checkTag">
+                        <div class="multiDropdownTag collapsible-header" data-target="selectCheckbox6" data-name="Related packages date" data-render="checkbox"><span class="sprite menuPrefix mDTTree"></span>Related packages assets<span class="sprite menuEnd mDTPtr rotate right"></span><span class="sprite menuEnd mDTEye right collapHeadIcon"></span></div>
+                        <div class="chipsWrap"></div>
+                        <div class="selectCheckbox collapsible-body" id="selectCheckbox6">
+                          
+                        </div>
+                      </li>
+
+                    </ul>
+
+                    </form>
+
+                  <button class="btn btn-primary col s12" type="submit" name="action">STORE SELECTED FILES (<span>2</span>)</button>
+              </div>
+
+            </div>
+
+        </div>
+      </div>
+
+      <!-- Filters -->
+      <section id="filters">
+        <div class="filters-container">
+          <div class="row">
+            <div class="col m6 no-padding-left">
+              <div class="filters">
+                <ul class="filter-options">
+                  <li class="dropdown plainPop">
+                    <a href="#" class='hover-link'>
+                      <span class="filterIcon"></span>Category<i class="material-icons">arrow_drop_down</i></a>
+                    <div class="dropdown-contents stay" id="category-filter" >
+                        <div class="dpSearch input-field clearable">
+                          <i class="material-icons prefix">search</i>
+                          <input type="text" placeholder="Search" id="categorySearch">
+                        </div>
+                        <ul class="dropdown-menu dropdown-list categoryFilterUL">
+                          <span class="arrow-up"></span>
+                          <li>
+                            <label>
+                              <input type="checkbox" class="filled-in" data-filter="Agricultural" />
+                              <span>Agricultural</span>
+                              <span class="label">12</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" class="filled-in" data-filter="Mechanical" />
+                              <span>Mechanical</span>
+                              <span class="label">127</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" class="filled-in" data-filter="Car" />
+                              <span>Car</span>
+                              <span class="label">78</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" class="filled-in" data-filter="Educational" />
+                              <span>Educational</span>
+                              <span class="label">12</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" class="filled-in" data-filter="Sports Products" />
+                              <span>Sports Products</span>
+                              <span class="label">127</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" class="filled-in" data-filter="Games" />
+                              <span>Games</span>
+                              <span class="label">78</span>
+                            </label>
+                          </li>
+                        </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown plainPop">
+                    <a href="#" class='hover-link'>
+                      <span class="filterIcon"></span>Asset Type<i class="material-icons">arrow_drop_down</i></a>
+                    <div id="assetType" class="dropdown-contents stay">
+                        <div class="dpSearch input-field clearable">
+                          <i class="material-icons prefix">search</i>
+                          <input type="text" placeholder="Search" id="assetTypeSearch">
+                        </div>
+                        <ul class="dropdown-menu dropdown-list assetTypeUL">
+                          <span class="arrow-up"></span>
+                          <li>
+                            <label>
+                              <input type="checkbox" class="filled-in" data-filter="Template" />
+                              <span>Template</span>
+                              <span class="label">78</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" class="filled-in" data-filter="Advert" />
+                              <span>Advert</span>
+                              <span class="label">12</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" class="filled-in" data-filter="Image"  />
+                              <span>Image</span>
+                              <span class="label">127</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" class="filled-in" data-filter="Publication"  />
+                              <span>Publication</span>
+                              <span class="label">23</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" class="filled-in" data-filter="Posters"  />
+                              <span>Posters</span>
+                              <span class="label">6</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" class="filled-in" data-filter="Audio"  />
+                              <span>Audio</span>
+                              <span class="label">6</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" class="filled-in" data-filter="Video"  />
+                              <span>Video</span>
+                              <span class="label">6</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label>
+                              <input type="checkbox" class="filled-in" data-filter="Animations"  />
+                              <span>Animations</span>
+                              <span class="label">6</span>
+                            </label>
+                          </li>
+                        </ul>
+                    </div>
+                  </li>
+                  <li class="dropdown plainPop tagsFilter">
+                      <a href="#" class='hover-link' data-target='tags-filter'><span></span>Tags<i class="material-icons">arrow_drop_down</i></a>
+                      <div class="dropdown-contents large stay" id="tags-filter">
+                        <div class="dpSearch input-field clearable tagSearchWrap">
+                          <i class="material-icons prefix">search</i>
+                          <input type="text" placeholder="Search" id="tagSearch">
+                        </div>
+                        <ul class="dropdown-menu tags-filterUL">
+                          <span class="arrow-up"></span>
+                          <li class="tag-item"><a href="#">Case Studies</a><span class="searchCount">62</span></li>
+                          <li class="tag-item"><a href="#">Photography</a><span class="searchCount">12</span></li>
+                          <li class="tag-item"><a href="#">Stock</a><span class="searchCount">23</span></li>
+                          <li class="tag-item"><a href="#">Car</a><span class="searchCount">23</span></li>
+                          <li class="tag-item"><a href="#">Restaurant</a><span class="searchCount">62</span></li>
+                          <li class="tag-item"><a href="#">Medical</a><span class="searchCount">12</span></li>
+                          <li class="tag-item"><a href="#">Travel</a><span class="searchCount">62</span></li>
+                          <li class="tag-item"><a href="#">Holiday</a><span class="searchCount">23</span></li>
+                          <li class="tag-item"><a href="#">Business</a><span class="searchCount">122</span></li>
+                          <li class="tag-item"><a href="#">Bike</a><span class="searchCount">12</span></li>
+                          <li class="tag-item"><a href="#">Food</a><span class="searchCount">2</span></li>
+                          <li class="tag-item"><a href="#">Real Estate</a><span class="searchCount">23</span></li>
+                          <li class="tag-item"><a href="#">Music</a><span class="searchCount">12</span></li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="dropdown plainPop countrySelection">
+                    <a href="#" class='hover-link'>
+                      <span class="filterIcon"></span>Country<i class="material-icons">arrow_drop_down</i></a>
+                    <div id="countrySelect" class="dropdown-contents stay">
+                        <div class="dpSearch input-field clearable">
+                          <i class="material-icons prefix">search</i>
+                          <input type="text" placeholder="Search" id="CountrySearch">
+                        </div>
+                        <ul class="dropdown-menu dropdown-list countrySelectUL">
+                          <span class="arrow-up"></span>
+                          <li class="firstLevelList">
+                            <label>
+                              <input type="checkbox" class="filled-in"/>
+                              <span>US</span>
+                            </label>
+                            <ul>
+                              <li class="secondLevelList">
+                                <label>
+                                  <input type="checkbox" class="filled-in" data-filter="New York" />
+                                  <span>New York</span>
+                                  <span class="label">6</span>
+                                </label>
+                              </li>
+                              <li class="secondLevelList">
+                                <label>
+                                  <input type="checkbox" class="filled-in" data-filter="California" />
+                                  <span>California</span>
+                                  <span class="label">21</span>
+                                </label>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="firstLevelList">
+                            <label>
+                              <input type="checkbox" class="filled-in"/>
+                              <span>India</span>
+                            </label>
+
+                            <ul>
+                              <li class="secondLevelList">
+                                <label>
+                                  <input type="checkbox" class="filled-in" data-filter="Chennai" />
+                                  <span>Chennai</span>
+                                  <span class="label">128</span>
+                                </label>
+                              </li>
+                              <li class="secondLevelList">
+                                <label>
+                                  <input type="checkbox" class="filled-in" data-filter="Bangalore" />
+                                  <span>Bangalore</span>
+                                  <span class="label">52</span>
+                                </label>
+                              </li>
+                            </ul>
+
+                          </li>
+                        </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col m6 no-padding-right right-align">
+
+
+                <form class="createAssetForm" enctype='multipart/form-data' method='POST' action=''> 
+                  <a href="#" id="createAssetAnchor" class="btn btn-primary">Create Asset</a>
+                  <input name="createAssetInput[]" type="file" multiple class="hide">
+                </form>
+
+              </div>
+            </div>
+          </div>
+        <!-- Media Filters -->  
+        <div class="media-filters">
+          <div class="row">
+            <div class="col m6 no-padding-left">
+              <div class="media-results">
+                <!-- <span class="selected-assets">10</span> -->
+                <span class="total-assets">Showing <b class="assetCount">12</b> Assets</span>
+              </div>
+              <div class="media-sort">
+                <!-- <div class="relevant-sort dropdown plainPop">
+                  <a href="#" class="hover-link"><span>Exact</span><i class="material-icons">arrow_drop_down</i></a>
+                  <div class="dropdown-contents">
+                    <ul class="dropdown-menu dropdown-select" id="relevant-sort">
+                      <span class="arrow-up"></span>
+                      <li><a href="#" name="Relevant">Relevant</a></li>
+                      <li><a href="#" name="Exact">Exact</a></li>
+                    </ul>
+                  </div>
+                </div> -->
+
+                <div class="order-by dropdown plainPop">
+                    <a href="#" class="hover-link"><span>Date created</span><i class="material-icons">arrow_drop_down</i></a>
+                    <div class="dropdown-contents">
+                      <ul class="dropdown-menu auto dropdown-select" id="media-sort">
+                        <span class="arrow-up"></span>
+                        <li><a href="#" name="Date created">Date created</a></li>
+                        <li><a href="#" name="Date added">Date added</a></li>
+                      </ul>
+                    </div><a href="#" title="Sort descending" class="sort"><span></span></a>
+                </div>
+              </div>
+            </div>
+            <div class="col m6 no-padding-right">
+              <div class="right">
+                  <div class="bulk-actions right">
+                      <div class="action-bar">
+                        <a href="#" class="tooltipped"><span class="tooltiptext">View details</span><span class="actionEye"></span></a>
+                        <a href="#" id="batchEdit" class="tooltipped"><span class="tooltiptext">Edit</span><span class="actionEdit"></span></a>
+                        <a href="#" class="tooltipped"><span class="tooltiptext">Download</span><span class="actionDownload"></span></a>
+                        <a href="#" class="tooltipped"><span class="tooltiptext">Share</span><span class="actionShare"></span></a>
+                        <a href="#" class="tooltipped"><span class="tooltiptext">Delete</span><span class="actionDel"></span></a>
+                      </div>
+
+                  <div class="select-all">
+                    <div class="dropdown plainPop">
+                        <a href="#" class='hover-link' data-target='select-options' id="select-value">
+                            <input type="checkbox" class="filled-in" />
+                            <span>Select</span><label></label><i class="material-icons">arrow_drop_down</i>
+                        </a>
+                        <div class="dropdown-contents" id="select-options">
+                            <ul class="dropdown-menu">
+                              <span class="arrow-up"></span>
+                              <li>
+                                <a href="#" name="Selected all" class="select-all" id="select-all">
+                                  <span>Select all</span>
+                                  <label>200</label>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" name="Selected visible" class="select-all" id="visible-assets">
+                                    <span>Select visible</span>
+                                    <label class="visibleAssets">44</label>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="#" name="Select" id="select-none">
+                                    <span>Select none</span>
+                                </a>
+                              </li>
+                            </ul>
+                        </div>
+                      </div>
+                </div>
+                <div class="grid-options">
+                  <a href="#" class="tooltipped active tooltipped" id="assets-thumbnail" data-position="top"><span class="tooltiptext">Thumbnail</span><span></span></a><a href="#" class="tooltipped" id="assets-large" data-position="top"><span class="tooltiptext">Large</span><span></span></a><a href="#" class="tooltipped" id="assets-detail" data-position="top"><span class="tooltiptext">Detail view</span><span></span></a>
+                </div>
+                <div class="quick-views dropdown plainPop">
+                  <a href="#" class='hover-link' data-target='quickview-links'><i class="material-icons">more_vert</i></a>
+                  <div class="dropdown-contents dropdown-right quickViewWrap">
+                    <ul class="dropdown-menu" id="quickview-links">
+                      <span class="arrow-up"></span>
+                      <li><a href="#"><i class="far fa-heart"></i> Wishlist</a></li>
+                      <li><a href="#"><i class="fas fa-search"></i> Saved Searches</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Values -->
+        <div class="filter-values"><div class="filter-item clear-filters"><span class="filter-text">Clear filters</span></div><div class="filter-item modal-trigger" data-target="save-filters"><span class="filter-text">Save filters</span>
+          </div>
+        </div>
+
+        </div>
+
+      </section>
+      
+      <section id="assets">
+        <div class="asset-listings assets-thumbnail row">
+
+          <!-- <div class="col xxl1 xl2 lm2point4 l3 m6 s12">  -->
+            <div class="card modal-trigger  small " data-target="asset-detail">
+                <div class="card-overlay">
+                    <div class="select">
+                      <label>
+                        <input type="checkbox" class="filled-in" name="Car">
+                        <span></span>
+                      </label>
+                    </div>
+                    <span class="cardCarousel">
+                      <span class="cc_prev"></span><span class="cc_next"></span>
+                    </span>
+                  </div>
+                <div class="card-image cc_carousel">
+                  <div class="cc_item fade"><img src="assets/images/thumbnails/1.jpg"></div>
+                  <div class="cc_item fade"><img src="assets/images/thumbnails/2.jpg"></div>
+                  <div class="cc_item fade"><img src="assets/images/thumbnails/3.jpg"></div>
+                </div>
+                <div class="card-caWrap">
+                  <div class="card-content">
+                      <span class="asset-name">2adpro collection</span>
+                      <div class="right">
+                          <!-- <span class="badge img-format" data-format="JPG">JPG</span> -->
+                      </div>
+                  </div>
+                  <div class="card-action">
+                    <span class="views tooltipped" data-position="bottom">
+                      <span class="tooltiptext">View count</span>
+                      <span class="viewsIcon"></span>12
+                    </span>
+                    <span class="downloads tooltipped" data-position="bottom">
+                      <span class="tooltiptext">Download count</span>
+                      <span class="downloadsIcon"></span>222
+                    </span>
+                    <span class="downloads tooltipped" data-position="bottom">
+                      <span class="tooltiptext">Versions</span>
+                      <span class="versionIcon"></span>3
+                    </span>
+                    <div class="right">
+                      <!-- <a class="add-wishlist"></a> -->
+                      <span class="badge img-format" data-format="JPG">JPG</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <!-- </div> -->
+
+          <!-- <div class="col xxl1 xl2 lm2point4 l3 m6 s12"> -->
+            <div class="card  small ">
+                <div class="card-overlay">
+                    <div class="select">
+                      <label>
+                        <input type="checkbox" class="filled-in" name="Car">
+                        <span></span>
+                      </label>
+                    </div>
+                  </div>
+                <div class="card-image">
+                  <img src="assets/images/thumbnails/2.jpg">
+                </div>
+                <div class="card-caWrap">
+                  <div class="card-content">
+                      <span class="asset-name">2adpro collection</span>
+                      <div class="right">
+                          <!-- <span class="badge img-format" data-format="JPG">JPG</span> -->
+                      </div>
+                  </div>
+                  <div class="card-action">
+                    <span class="views tooltipped" data-position="bottom">
+                      <span class="tooltiptext">View count</span>
+                      <span class="viewsIcon"></span>12
+                    </span>
+                    <span class="downloads tooltipped" data-position="bottom">
+                      <span class="tooltiptext">Download count</span>
+                      <span class="downloadsIcon"></span>222
+                    </span>
+                    <div class="right">
+                      <!-- <a class="add-wishlist"></a> -->
+                      <span class="badge img-format" data-format="GIF">GIF</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <!-- </div> -->
+
+          <!-- <div class="col xxl1 xl2 lm2point4 l3 m6 s12"> -->
+            <div class="card  small ">
+              <div class="card-overlay">
+                  <div class="select">
+                    <label>
+                      <input type="checkbox" class="filled-in" name="Car">
+                      <span></span>
+                    </label>
+                  </div>
+                </div>
+              <div class="card-image">
+                <img src="assets/images/thumbnails/5.jpg">
+              </div>
+                <div class="card-caWrap">
+                  <div class="card-content">
+                      <span class="asset-name">2adpro collection</span>
+                      <div class="right">
+                          <!-- <span class="badge img-format" data-format="JPG">JPG</span> -->
+                      </div>
+                  </div>
+                  <div class="card-action">
+                    <span class="views tooltipped" data-position="bottom">
+                      <span class="tooltiptext">View count</span>
+                      <span class="viewsIcon"></span>12
+                    </span>
+                    <span class="downloads tooltipped" data-position="bottom">
+                      <span class="tooltiptext">Download count</span>
+                      <span class="downloadsIcon"></span>222
+                    </span>
+                    <div class="right">
+                      <!-- <a class="add-wishlist"></a> -->
+                      <span class="badge img-format" data-format="MP4">MP4</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <!-- </div> -->
+
+          <!-- <div class="col xxl1 xl2 lm2point4 l3 m6 s12"> -->
+            <div class="card  small ">
+              <div class="card-overlay">
+                  <div class="select">
+                    <label>
+                      <input type="checkbox" class="filled-in" name="Car">
+                      <span></span>
+                    </label>
+                  </div>
+                </div>
+              <div class="card-image">
+                <img src="assets/images/thumbnails/6.jpg">
+              </div>
+                <div class="card-caWrap">
+                  <div class="card-content">
+                      <span class="asset-name">2adpro collection</span>
+                      <div class="right">
+                          <!-- <span class="badge img-format" data-format="JPG">JPG</span> -->
+                      </div>
+                  </div>
+                  <div class="card-action">
+                    <span class="views tooltipped" data-position="bottom">
+                      <span class="tooltiptext">View count</span>
+                      <span class="viewsIcon"></span>12
+                    </span>
+                    <span class="downloads tooltipped" data-position="bottom">
+                      <span class="tooltiptext">Download count</span>
+                      <span class="downloadsIcon"></span>222
+                    </span>
+                    <div class="right">
+                      <!-- <a class="add-wishlist"></a> -->
+                      <span class="badge img-format" data-format="MP3">MP3</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <!-- </div> -->
+
+          <!-- <div class="col xxl1 xl2 lm2point4 l3 m6 s12"> -->
+            <div class="card  small ">
+                <div class="card-overlay">
+                    <div class="select">
+                      <label>
+                        <input type="checkbox" class="filled-in" name="Car">
+                        <span></span>
+                      </label>
+                    </div>
+                  </div>
+                <div class="card-image">
+                  <img src="assets/images/thumbnails/7.jpg">
+                </div>
+                <div class="card-caWrap">
+                  <div class="card-content">
+                      <span class="asset-name">2adpro collection</span>
+                      <div class="right">
+                          <!-- <span class="badge img-format" data-format="JPG">JPG</span> -->
+                      </div>
+                  </div>
+                  <div class="card-action">
+                    <span class="views tooltipped" data-position="bottom">
+                      <span class="tooltiptext">View count</span>
+                      <span class="viewsIcon"></span>12
+                    </span>
+                    <span class="downloads tooltipped" data-position="bottom">
+                      <span class="tooltiptext">Download count</span>
+                      <span class="downloadsIcon"></span>222
+                    </span>
+                    <div class="right">
+                      <!-- <a class="add-wishlist"></a> -->
+                      <span class="badge img-format" data-format="JPG">JPG</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <!-- </div> -->
+
+          <!-- <div class="col xxl1 xl2 lm2point4 l3 m6 s12"> -->
+            <div class="card  small ">
+                <div class="card-overlay">
+                    <div class="select">
+                      <label>
+                        <input type="checkbox" class="filled-in" name="Car">
+                        <span></span>
+                      </label>
+                    </div>
+                  </div>
+                <div class="card-image">
+                  <img src="assets/images/thumbnails/8.jpg">
+                </div>
+                <div class="card-caWrap">
+                  <div class="card-content">
+                      <span class="asset-name">2adpro collection</span>
+                      <div class="right">
+                          <!-- <span class="badge img-format" data-format="JPG">JPG</span> -->
+                      </div>
+                  </div>
+                  <div class="card-action">
+                    <span class="views tooltipped" data-position="bottom">
+                      <span class="tooltiptext">View count</span>
+                      <span class="viewsIcon"></span>12
+                    </span>
+                    <span class="downloads tooltipped" data-position="bottom">
+                      <span class="tooltiptext">Download count</span>
+                      <span class="downloadsIcon"></span>222
+                    </span>
+                    <div class="right">
+                      <!-- <a class="add-wishlist"></a> -->
+                      <span class="badge img-format" data-format="MP4">MP4</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <!-- </div> -->
+
+          <!-- <div class="col xxl1 xl2 lm2point4 l3 m6 s12"> -->
+            <div class="card  small ">
+              <div class="card-overlay">
+                  <div class="select">
+                    <label>
+                      <input type="checkbox" class="filled-in" name="Car">
+                      <span></span>
+                    </label>
+                  </div>
+                </div>
+              <div class="card-image">
+                <img src="assets/images/thumbnails/9.jpg">
+              </div>
+                <div class="card-caWrap">
+                  <div class="card-content">
+                      <span class="asset-name">2adpro collection</span>
+                      <div class="right">
+                          <!-- <span class="badge img-format" data-format="JPG">JPG</span> -->
+                      </div>
+                  </div>
+                  <div class="card-action">
+                    <span class="views tooltipped" data-position="bottom">
+                      <span class="tooltiptext">View count</span>
+                      <span class="viewsIcon"></span>12
+                    </span>
+                    <span class="downloads tooltipped" data-position="bottom">
+                      <span class="tooltiptext">Download count</span>
+                      <span class="downloadsIcon"></span>222
+                    </span>
+                    <div class="right">
+                      <!-- <a class="add-wishlist"></a> -->
+                      <span class="badge img-format" data-format="JPG">JPG</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <!-- </div> -->
+
+          <!-- <div class="col xxl1 xl2 lm2point4 l3 m6 s12"> -->
+            <div class="card  small ">
+              <div class="card-overlay">
+                  <div class="select">
+                    <label>
+                      <input type="checkbox" class="filled-in" name="Car">
+                      <span></span>
+                    </label>
+                  </div>
+                </div>
+              <div class="card-image">
+                <img src="assets/images/thumbnails/10.jpg">
+              </div>
+                <div class="card-caWrap">
+                  <div class="card-content">
+                      <span class="asset-name">2adpro collection</span>
+                      <div class="right">
+                          <!-- <span class="badge img-format" data-format="JPG">JPG</span> -->
+                      </div>
+                  </div>
+                  <div class="card-action">
+                    <span class="views tooltipped" data-position="bottom">
+                      <span class="tooltiptext">View count</span>
+                      <span class="viewsIcon"></span>12
+                    </span>
+                    <span class="downloads tooltipped" data-position="bottom">
+                      <span class="tooltiptext">Download count</span>
+                      <span class="downloadsIcon"></span>222
+                    </span>
+                    <div class="right">
+                      <!-- <a class="add-wishlist"></a> -->
+                      <span class="badge img-format" data-format="JPG">JPG</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <!-- </div> -->
+
+          <!-- <div class="col xxl1 xl2 lm2point4 l3 m6 s12"> -->
+            <div class="card  small ">
+              <div class="card-overlay">
+                  <div class="select">
+                    <label>
+                      <input type="checkbox" class="filled-in" name="Car">
+                      <span></span>
+                    </label>
+                  </div>
+                </div>
+              <div class="card-image">
+                <img src="assets/images/thumbnails/11.jpg">
+              </div>
+                <div class="card-caWrap">
+                  <div class="card-content">
+                      <span class="asset-name">2adpro collection</span>
+                      <div class="right">
+                          <!-- <span class="badge img-format" data-format="JPG">JPG</span> -->
+                      </div>
+                  </div>
+                  <div class="card-action">
+                    <span class="views tooltipped" data-position="bottom">
+                      <span class="tooltiptext">View count</span>
+                      <span class="viewsIcon"></span>12
+                    </span>
+                    <span class="downloads tooltipped" data-position="bottom">
+                      <span class="tooltiptext">Download count</span>
+                      <span class="downloadsIcon"></span>222
+                    </span>
+                    <div class="right">
+                      <!-- <a class="add-wishlist"></a> -->
+                      <span class="badge img-format" data-format="GIF">GIF</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <!-- </div> -->
+
+          <!-- <div class="col xxl1 xl2 lm2point4 l3 m6 s12"> -->
+            <div class="card  small ">
+              <div class="card-overlay">
+                  <div class="select">
+                    <label>
+                      <input type="checkbox" class="filled-in" name="Car">
+                      <span></span>
+                    </label>
+                  </div>
+                </div>
+              <div class="card-image">
+                <img src="assets/images/thumbnails/12.jpg">
+              </div>
+                <div class="card-caWrap">
+                  <div class="card-content">
+                      <span class="asset-name">2adpro collection</span>
+                      <div class="right">
+                          <!-- <span class="badge img-format" data-format="JPG">JPG</span> -->
+                      </div>
+                  </div>
+                  <div class="card-action">
+                    <span class="views tooltipped" data-position="bottom">
+                      <span class="tooltiptext">View count</span>
+                      <span class="viewsIcon"></span>12
+                    </span>
+                    <span class="downloads tooltipped" data-position="bottom">
+                      <span class="tooltiptext">Download count</span>
+                      <span class="downloadsIcon"></span>222
+                    </span>
+                    <div class="right">
+                      <!-- <a class="add-wishlist"></a> -->
+                      <span class="badge img-format" data-format="MP3">MP4</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <!-- </div> -->
+
+          <!-- <div class="col xxl1 xl2 lm2point4 l3 m6 s12"> -->
+            <div class="card  small ">
+              <div class="card-overlay">
+                  <div class="select">
+                    <label>
+                      <input type="checkbox" class="filled-in" name="Car">
+                      <span></span>
+                    </label>
+                  </div>
+                </div>
+              <div class="card-image">
+                <img src="assets/images/thumbnails/13.jpg">
+              </div>
+                <div class="card-caWrap">
+                  <div class="card-content">
+                      <span class="asset-name">2adpro collection</span>
+                      <div class="right">
+                          <!-- <span class="badge img-format" data-format="JPG">JPG</span> -->
+                      </div>
+                  </div>
+                  <div class="card-action">
+                    <span class="views tooltipped" data-position="bottom">
+                      <span class="tooltiptext">View count</span>
+                      <span class="viewsIcon"></span>12
+                    </span>
+                    <span class="downloads tooltipped" data-position="bottom">
+                      <span class="tooltiptext">Download count</span>
+                      <span class="downloadsIcon"></span>222
+                    </span>
+                    <div class="right">
+                      <!-- <a class="add-wishlist"></a> -->
+                      <span class="badge img-format" data-format="JPG">JPG</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <!-- </div> -->
+
+          <!-- <div class="col xxl1 xl2 lm2point4 l3 m6 s12"> -->
+            <div class="card  small ">
+              <div class="card-overlay">
+                  <div class="select">
+                    <label>
+                      <input type="checkbox" class="filled-in" name="Car">
+                      <span></span>
+                    </label>
+                  </div>
+                </div>
+              <div class="card-image">
+                <img src="assets/images/thumbnails/14.jpg">
+              </div>
+                <div class="card-caWrap">
+                  <div class="card-content">
+                      <span class="asset-name">2adpro collection</span>
+                      <div class="right">
+                          <!-- <span class="badge img-format" data-format="JPG">JPG</span> -->
+                      </div>
+                  </div>
+                  <div class="card-action">
+                    <span class="views tooltipped" data-position="bottom">
+                      <span class="tooltiptext">View count</span>
+                      <span class="viewsIcon"></span>12
+                    </span>
+                    <span class="downloads tooltipped" data-position="bottom">
+                      <span class="tooltiptext">Download count</span>
+                      <span class="downloadsIcon"></span>222
+                    </span>
+                    <div class="right">
+                      <!-- <a class="add-wishlist"></a> -->
+                      <span class="badge img-format" data-format="JPG">JPG</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <!-- </div> -->
+
+          <!-- <div class="col xxl1 xl2 lm2point4 l3 m6 s12"> -->
+            <div class="card  small ">
+              <div class="card-overlay">
+                  <div class="select">
+                    <label>
+                      <input type="checkbox" class="filled-in" name="Car">
+                      <span></span>
+                    </label>
+                  </div>
+                </div>
+              <div class="card-image">
+                <img src="assets/images/thumbnails/15.jpg">
+              </div>
+                <div class="card-caWrap">
+                  <div class="card-content">
+                      <span class="asset-name">2adpro collection</span>
+                      <div class="right">
+                          <!-- <span class="badge img-format" data-format="JPG">JPG</span> -->
+                      </div>
+                  </div>
+                  <div class="card-action">
+                    <span class="views tooltipped" data-position="bottom">
+                      <span class="tooltiptext">View count</span>
+                      <span class="viewsIcon"></span>12
+                    </span>
+                    <span class="downloads tooltipped" data-position="bottom">
+                      <span class="tooltiptext">Download count</span>
+                      <span class="downloadsIcon"></span>222
+                    </span>
+                    <div class="right">
+                      <!-- <a class="add-wishlist"></a> -->
+                      <span class="badge img-format" data-format="PNG">PNG</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <!-- </div> -->
+
+        </div>
+      </section>
+
+    </main>
+
+
+    <div class="main-panel rhs animated fadeIn" id="batchDetails">
+      <section class="row">
+
+        <div class="col s12 title">
+          <div>
+            <h2>Batch Details</h2>
+            <button class="btn btn-primary right modal-trigger" data-target="batchUpload">BATCH UPLOAD</button>
+          </div>
+        </div>
+
+        <div class="col s12">
+          <div class="col s12 batchTableWrap">
+            <table id="batchTable">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Status</th>
+                  <th>Created By</th>
+                  <th>Date Created</th>
+                  <th>Processed Date</th>
+                  <th class="center">Files Moved</th>
+                  <th>FTP Details</th>
+                  <th class="center">View</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr class="modal-trigger" href="#batchListing" data-target="batchListing">
+                  <td>395</td>
+                  <td>Invalid</td>
+                  <td>demo</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td class="center">1</td>
+                  <td>ftp.2adpro.com</td>
+                  <td class="center batchLisView"><a class="modal-trigger" href="#batchListing" data-target="batchListing"><i class="material-icons">visibility</i></a></td>
+                </tr>
+                <tr class="modal-trigger" href="#batchListing" data-target="batchListing">
+                  <td>395</td>
+                  <td>Invalid</td>
+                  <td>demo</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td class="center">1</td>
+                  <td>ftp.2adpro.com</td>
+                  <td class="center batchLisView"><a class="modal-trigger" href="#batchListing" data-target="batchListing"><i class="material-icons">visibility</i></a></td>
+                </tr>
+                <tr class="modal-trigger" href="#batchListing" data-target="batchListing">
+                  <td>395</td>
+                  <td>Invalid</td>
+                  <td>demo</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td class="center">1</td>
+                  <td>ftp.2adpro.com</td>
+                  <td class="center batchLisView"><a class="modal-trigger" href="#batchListing" data-target="batchListing"><i class="material-icons">visibility</i></a></td>
+                </tr>
+                <tr class="modal-trigger" href="#batchListing" data-target="batchListing">
+                  <td>395</td>
+                  <td>Invalid</td>
+                  <td>demo</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td class="center">1</td>
+                  <td>ftp.2adpro.com</td>
+                  <td class="center batchLisView"><a class="modal-trigger" href="#batchListing" data-target="batchListing"><i class="material-icons">visibility</i></a></td>
+                </tr>
+                <tr class="modal-trigger" href="#batchListing" data-target="batchListing">
+                  <td>395</td>
+                  <td>Invalid</td>
+                  <td>demo</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td class="center">1</td>
+                  <td>ftp.2adpro.com</td>
+                  <td class="center batchLisView"><a class="modal-trigger" href="#batchListing" data-target="batchListing"><i class="material-icons">visibility</i></a></td>
+                </tr>
+                <tr class="modal-trigger" href="#batchListing" data-target="batchListing">
+                  <td>395</td>
+                  <td>Invalid</td>
+                  <td>demo</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td class="center">1</td>
+                  <td>ftp.2adpro.com</td>
+                  <td class="center batchLisView"><a class="modal-trigger" href="#batchListing" data-target="batchListing"><i class="material-icons">visibility</i></a></td>
+                </tr>
+                <tr class="modal-trigger" href="#batchListing" data-target="batchListing">
+                  <td>395</td>
+                  <td>Invalid</td>
+                  <td>demo</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td class="center">1</td>
+                  <td>ftp.2adpro.com</td>
+                  <td class="center batchLisView"><a class="modal-trigger" href="#batchListing" data-target="batchListing"><i class="material-icons">visibility</i></a></td>
+                </tr>
+                <tr class="modal-trigger" href="#batchListing" data-target="batchListing">
+                  <td>395</td>
+                  <td>Invalid</td>
+                  <td>demo</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td class="center">1</td>
+                  <td>ftp.2adpro.com</td>
+                  <td class="center batchLisView"><a class="modal-trigger" href="#batchListing" data-target="batchListing"><i class="material-icons">visibility</i></a></td>
+                </tr>
+                <tr class="modal-trigger" href="#batchListing" data-target="batchListing">
+                  <td>395</td>
+                  <td>Invalid</td>
+                  <td>demo</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td class="center">1</td>
+                  <td>ftp.2adpro.com</td>
+                  <td class="center batchLisView"><a class="modal-trigger" href="#batchListing" data-target="batchListing"><i class="material-icons">visibility</i></a></td>
+                </tr>
+                <tr class="modal-trigger" href="#batchListing" data-target="batchListing">
+                  <td>395</td>
+                  <td>Invalid</td>
+                  <td>demo</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td class="center">1</td>
+                  <td>ftp.2adpro.com</td>
+                  <td class="center batchLisView"><a class="modal-trigger" href="#batchListing" data-target="batchListing"><i class="material-icons">visibility</i></a></td>
+                </tr>
+                <tr class="modal-trigger" href="#batchListing" data-target="batchListing">
+                  <td>395</td>
+                  <td>Invalid</td>
+                  <td>demo</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td class="center">1</td>
+                  <td>ftp.2adpro.com</td>
+                  <td class="center batchLisView"><a class="modal-trigger" href="#batchListing" data-target="batchListing"><i class="material-icons">visibility</i></a></td>
+                </tr>
+                <tr class="modal-trigger" href="#batchListing" data-target="batchListing">
+                  <td>395</td>
+                  <td>Invalid</td>
+                  <td>demo</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td class="center">1</td>
+                  <td>ftp.2adpro.com</td>
+                  <td class="center batchLisView"><a class="modal-trigger" href="#batchListing" data-target="batchListing"><i class="material-icons">visibility</i></a></td>
+                </tr>
+                <tr class="modal-trigger" href="#batchListing" data-target="batchListing">
+                  <td>395</td>
+                  <td>Invalid</td>
+                  <td>demo</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td class="center">1</td>
+                  <td>ftp.2adpro.com</td>
+                  <td class="center batchLisView"><a class="modal-trigger" href="#batchListing" data-target="batchListing"><i class="material-icons">visibility</i></a></td>
+                </tr>
+                <tr class="modal-trigger" href="#batchListing" data-target="batchListing">
+                  <td>395</td>
+                  <td>Invalid</td>
+                  <td>demo</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td class="center">1</td>
+                  <td>ftp.2adpro.com</td>
+                  <td class="center batchLisView"><a class="modal-trigger" href="#batchListing" data-target="batchListing"><i class="material-icons">visibility</i></a></td>
+                </tr>
+                <tr class="modal-trigger" href="#batchListing" data-target="batchListing">
+                  <td>395</td>
+                  <td>Invalid</td>
+                  <td>demo</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td>26-08-2018 | 10:00 am</td>
+                  <td class="center">1</td>
+                  <td>ftp.2adpro.com</td>
+                  <td class="center batchLisView"><a class="modal-trigger" href="#batchListing" data-target="batchListing"><i class="material-icons">visibility</i></a></td>
+                </tr>
+              </tbody>
+            </table>
+          <div id="bottom_anchor"></div>
+          </div>
+        </div>
+          
+      </section>
+      
+    </div>
+
+
+    <div class="main-panel rhs animated fadeIn" id="reports">
+      
+      <div class="row">
+        <div class="col s12 title">
+          <div>
+            <h2>Reports</h2>
+          </div>
+        </div>
+      </div>
+
+      <section class="row valign-wrapper under-construction animated fadeIn">
+        <div class="col s12">
+          <img src="assets/images/icons/warningIcon.png">
+          <p class="big">UH OH!<br></p>
+          <p class="small">This page is under construction!</p>
+        </div>
+          
+      </section>
+      
+    </div>
+
+    <div class="main-panel rhs animated fadeIn" id="settings">
+      
+      <div class="row">
+        <div class="col s12 title">
+          <div>
+            <h2>Settings</h2>
+          </div>
+        </div>
+      </div>
+
+      <section class="row valign-wrapper under-construction animated fadeIn">
+        <div class="col s12">
+          <img src="assets/images/icons/warningIcon.png">
+          <p class="big">UH OH!<br></p>
+          <p class="small">This page is under construction!</p>
+        </div>
+          
+      </section>
+      
+    </div>
+
+<!-- template for file addition -->
+    <div id="tpl">
+      
+      <div class="dz-preview dz-file-preview animated slideInDown">
+        <div class="fileBatchCap">
+          <i class="material-icons statusIcon">autorenew</i>
+          <span class="status">Uploading</span>&nbsp;
+          <span class="dz-details"><span class="dz-filename fileName tooltipped" data-position="top" data-dz-name></span></span>&nbsp;
+          <span class="time">14 </span>
+          <span class="unit">secs </span>
+          <span class="rem">left</span>&nbsp;
+          <span class="action"></span>
+          <i class="material-icons close">close</i>
+        </div>
+        <div class="progress dz-progress"><div class="determinate dz-upload" data-dz-uploadprogress></div></div>
+      </div>
+    
+    </div>
+
+
+    <!-- Asset Detail Modal -->
+    <div id="asset-detail" class="modal fullscreen">
+        <div class="modal-content">
+          <div class="asset-details">
+            <div class="modal-close full">
+              <i class="material-icons">close</i>
+            </div>
+            <div class="row">
+              <div class="col m8 no-padding">
+                <div class="slider-panel">
+                  <h2>Advertisement
+                        <span class="notTab right"><a href="#" class="hide-logs tooltipped" data-position="bottom"><i class="material-icons">arrow_downward</i></a></span>
+                  </h2>
+                  <!-- <h5>Code: XAS13UNI</h5> -->
+                  <!-- Slider -->
+                  <div class="carousel carousel-slider" id="assets-slider" data-indicators="true">
+                      <div class="left cIndicator">
+                       <a href="prev" class="movePrevCarousel middle-indicator-text content-indicator"><i class="material-icons left  middle-indicator-text">chevron_left</i></a>
+                      </div>
+                      
+                      <div class="right cIndicator">
+                      <a href="next" class="moveNextCarousel middle-indicator-text content-indicator"><i class="material-icons right middle-indicator-text">chevron_right</i></a>
+                      </div>
+
+                     <div class="carousel-item">
+                        <img src="assets/images/asset-files/asset-1.jpg" alt="" />
+                        <div class="assetName">myimage.jpg</div>
+                     </div>
+
+                     <div class="carousel-item">
+                      <video controls>
+                        <source src="https://jdvaultbeta.2adpro.com/uploads/1181/2018/May/68396/Creative_YC.mp4" type="video/mp4">
+                        <source src="https://jdvaultbeta.2adpro.com/uploads/1181/2018/May/68396/Creative_YC.mp4" type="video/ogg">
+                        Your browser does not support HTML5 video.
+                      </video>
+                        <div class="assetName">myvideofile.mp4</div>
+
+                     </div>
+
+                     <div class="carousel-item">
+                        <embed src="http://www.hbp.com/resources/SAMPLE%20PDF.pdf" width="100%" height="100%" class="pdf-img" />
+                        <div class="assetName">mypdf.pdf</div>
+                     </div>
+
+                     <div class="change-logs">
+                      <ul id="activityTabs" class="tabs">
+                        <li class="tab"><a href="#changeLogs">Change Logs</a></li>
+                        <li class="tab"><a href="#downloadHistory">Download History</a></li>
+                      </ul>
+
+
+                      <div id="changeLogs">
+                       <table>
+                        <thead>
+                          <tr>
+                              <th>User ID</th>
+                              <th>Date</th>
+                              <th>Field Name</th>
+                              <th>Old Value</th>
+                              <th>New Value</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>Date Created</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>Date Created</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>Date Created</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>Date Created</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>Date Created</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>Date Created</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>Date Created</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>Date Created</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>Date Created</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>Date Created</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>Date Created</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>Date Created</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      </div>
+
+                      <div id="downloadHistory">
+                       <table>
+                        <thead>
+                          <tr>
+                              <th>User ID</th>
+                              <th>Date</th>
+                              <th>Asset Name</th>
+                              <th>Start Time</th>
+                              <th>End Time</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>Date Created</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>name1</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>name2</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>name3</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>name4</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>name5</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>name6</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>name6</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>name7</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>name8</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>name9</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                          <tr>
+                            <td>demoshiva</td>
+                            <td>O4/06/2018</td>
+                            <td>name10</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                            <td>May 28, 2018 03.00 PM</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      </div>
+
+                     </div>
+                  </div>
+                  <div class="asset-metrics">
+                    <span><img src="assets/images/icons/download-icn.png" alt="" /> 45</span>
+                    <span><img src="assets/images/icons/views-icn.png" alt="" /> 212</span>
+                    <div class="right asset-actions">
+                      <a href="#" class="btn btn-grey btn-small" id="changelogs-link"><i class="fas fa-history"></i> Activity</a>
+                      <a href="#" class="btn btn-grey btn-small"><i class="fas fa-arrow-left"></i>  Previous</a>
+                      <a href="#" class="btn btn-grey btn-small">Next <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              <div class="col m4 no-padding">
+                <div class="info-panel">
+                  <h3>Asset Details <i class="fas fa-info right infoIcon"></i> <i class="fas fa-pencil-alt right editIcon"></i><i class="fas fa-trash-alt right deleteIcon dropdown-trigger" data-target="eDeleteConfirm"></i><i class="far fa-envelope right mailIcon dropdown-trigger"  data-target="eMailPopup"></i> </h3>
+
+                    <ul id='eDeleteConfirm' class='dropdown-content dropdown-contents'>
+                      <span class="arrow-up"></span>
+                      <div class="center-align"><img src="assets/images/icons/warningIcon.png">
+                      <p class="center">Are you sure you want to delete additional files?</p>
+                        <button class="btn btn-grey eDeleteCancel btn-small">CANCEL</button>
+                        <button class="btn btn-prime  eDeleteYes btn-small">YES, DELETE IT</button>
+                      </div>
+                    </ul>
+
+                    <ul id='eMailPopup' class='dropdown-content dropdown-contents'>
+                      <span class="arrow-up"></span>
+                      <div>
+                         <h5>Send Email</h5>
+                         <form>
+                            <!-- <label>Name</label> -->
+
+                            <label for="email">EMAIL</label>
+                            <div class="input-field">
+                              <input placeholder="Enter email here" id="email" type="email" class="validate">
+                            </div>
+
+                            <label for="subject">SUBJECT</label>
+                            <div class="input-field">
+                              <input placeholder="Enter subject here" id="subject" type="text" class="validate">
+                            </div>
+
+                            <label for="textarea1">MESSAGE</label>
+                            <div class="input-field">
+                              <textarea id="textarea1" class="materialize-textarea" placeholder="Type message here"></textarea>
+                            </div>
+                            <div class="row">
+                              <div class="col s6"><button class="btn btn-grey eMailCancel btn-small" type="button">CANCEL</button></div>
+                              <div class="col s6"><div class="row"><button class="btn btn-prime  eMailSend btn-small">SEND FILES</button></div></div>
+                            </div>
+
+                         </form>
+                      </div>
+                    </ul>
+
+              <form id="uploadFileForm" name="editFileForm">
+              
+                <ul class="collapsible">
+
+                  <li class="active">
+                    <div class="collapsible-header"><i class="material-icons">info_outline</i> INFORMATION <i class="material-icons right rotate">keyboard_arrow_right</i></div>
+                    <div class="collapsible-body">
+                      <ul class="collapsible">
+                        <li class="checkTag">
+                          <div class="multiDropdownTag" data-target="selectCheckbox1" data-name="Code" data-render="checkbox">CODE</div>
+                          <div class="multiDropdownVal">XAC009345</div>
+                          <hr>
+                        </li>
+
+                        <li class="checkTag">
+                          <div class="multiDropdownTag" data-target="selectCheckbox1" data-name="Name" data-render="checkbox">NAME</div>
+                          <input value="Asset name"  class="multiDropdownVal assetNameUpl" disabled name="assetNameUpl">
+                          <hr>
+                        </li>
+
+                        <li class="checkTag">
+                          <div class="multiDropdownTag collapsible-header nc no-collapsible" data-target="selectCheckbox1" data-name="Media type" data-render="checkbox">MEDIA TYPE </div>
+                          <div class="chipsWrap"></div>
+                          <hr>
+                          <div class="selectCheckbox collapsible-body" id="selectCheckbox1">
+                            <p>
+                              <label>
+                                <input type="checkbox" class="filled-in" checked="checked" />
+                                <span class="listItem">Digital</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" class="filled-in" checked="checked" />
+                                <span class="listItem">Print</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span class="listItem">Mobile</span>
+                              </label>
+                            </p>
+                          </div>
+                        </li>
+                       
+                        <li class="checkTag">
+                          <div class="multiDropdownTag collapsible-header nc no-collapsible" data-target="selectCheckbox2" data-name="Asset type" data-render="checkbox">ASSET TYPE </div>
+                          <div class="chipsWrap"></div>
+                          <hr>
+                          <div class="selectCheckbox collapsible-body" id="selectCheckbox2">
+                            <p>
+                              <label>
+                                <input type="checkbox" class="filled-in" checked="checked" />
+                                <span class="listItem">Publication</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" class="filled-in" checked="checked" />
+                                <span class="listItem">Magazine</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span class="listItem">Newspaper</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span class="listItem">E-Paper</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span class="listItem">Cinema</span>
+                              </label>
+                            </p>
+                          </div>
+                        </li>
+
+                        <li class="checkTag">
+                          <div class="multiDropdownTag collapsible-header nc no-collapsible" data-target="selectCheckbox3" data-name="Category" data-render="checkbox">CATEGORY </div>
+                          <div class="chipsWrap"></div>
+                          <hr>
+                          <div class="selectCheckbox collapsible-body" id="selectCheckbox3">
+                            <p>
+                              <label>
+                                <input type="checkbox" class="filled-in" checked="checked" />
+                                <span class="listItem">Real Estate</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" class="filled-in" checked="checked" />
+                                <span class="listItem">Entertainment</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span class="listItem">Education</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span class="listItem">Automotive</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span class="listItem">Health & Fitness</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span class="listItem">Travel</span>
+                              </label>
+                            </p>
+                            <p>
+                              <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span class="listItem">Trade Services</span>
+                              </label>
+                            </p>
+                          </div>
+                        </li>
+
+                        <div class="multiDropdownTag dMod2" data-name="Description">DESCRIPTION </div>
+                        <div class="input-field noTop">
+                          <textarea name="fileUploadDesc" placeholder="description goes here" class="materialize-textarea fileUploadDesc" data-length="120" disabled></textarea>
+                          <hr>
+                        </div>
+
+                        <li class="checkTag dMod">
+                          <div class="multiDropdownTag dMod collapsible-header nc no-collapsible" data-name="Tags">TAGS </div>
+                          <div class="chipsWrap"></div>
+                          <div class="collapsible-body selectCheckbox">
+
+                            <div id="selectCheckbox4" style="display: none">
+                                <label><input type="checkbox" class="filled-in" checked="checked" /><span class="listItem">December</span></label>
+
+                                <label><input type="checkbox" class="filled-in" checked="checked" /><span class="listItem">Xmas</span></label>
+
+                                <label><input type="checkbox" class="filled-in" checked="checked" /><span class="listItem">New year</span></label>
+
+                                <label><input type="checkbox" class="filled-in" checked="checked" /><span class="listItem">Celebration</span></label>
+                            </div>
+
+                          <div id="editChips" class="chips dMod"></div></div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li>                  
+                    <div class="collapsible-header"><i class="material-icons">content_copy</i> PRIMARY FILES <i class="material-icons right rotate">keyboard_arrow_right</i><span class="active badge">3</span></div>
+                    <div class="collapsible-body primaryFiles">
+                      <div class="pmWrap"></div>
+
+                     <!--  <div class="fileCapsule valign-wrapper">
+                          <label>
+                            <input type="checkbox" class="filled-in" checked="checked" data-origin="Primary 1"  />
+                            <span></span>
+                          </label>
+                          <div class="imgWrapper"><img src="assets/images/thumbnails/1.jpg"></div>
+                          <div class="filenameWrapper">
+                            <p class="fnTitle">Primary 1</p>
+                            <p class="fnInfo">700 x 333 px | 101 KB</p>
+                          </div>
+                          <div class="homeIconWrapper right">
+                            <i class="material-icons">home</i>
+                          </div>
+                      </div>
+
+                      <div class="fileCapsule valign-wrapper">
+                          <label>
+                            <input type="checkbox" class="filled-in" data-origin="Primary 2" />
+                            <span></span>
+                          </label>
+                          <div class="imgWrapper"><img src="assets/images/thumbnails/video-icon.png"></div>
+                          <div class="filenameWrapper">
+                            <p class="fnTitle">Primary 2</p>
+                            <p class="fnInfo">700 x 333 px | 101 KB</p>
+                          </div>
+                          <div class="homeIconWrapper right">
+                            <i class="material-icons">home</i>
+                          </div>
+                      </div>
+
+                      <div class="fileCapsule valign-wrapper">
+                          <label>
+                            <input type="checkbox" class="filled-in" data-origin="Primary 3" />
+                            <span></span>
+                          </label>
+                          <div class="imgWrapper"><img src="assets/images/thumbnails/pdf-icon.png" data-origin="Primary 3"></div>
+                          <div class="filenameWrapper">
+                            <p class="fnTitle">Primary 3</p>
+                            <p class="fnInfo">700 x 333 px | 101 KB</p>
+                          </div>
+                          <div class="homeIconWrapper right">
+                            <i class="material-icons">home</i>
+                          </div>
+                      </div> -->
+                      <div class="fileBatchCapwWrPm"></div>
+                      <button id="addFilesPrimary" action="assets/uploads"  method="post" enctype="multipart/form-data" multiple class="btn addFiles dropzone btn-dotted">
+                        <i class="material-icons">cloud_upload</i>
+                        &nbsp;&nbsp;ADD PRIMARY FILES
+                        <div class="dz-message"></div>
+                      </button>
+
+                    </div>
+                  </li>
+
+                  <!-- <li>               
+                    <div class="collapsible-header"><i class="material-icons">content_copy</i> ADDITIONAL FILES <i class="material-icons right rotate">keyboard_arrow_right</i><span class="active badge">5</span></div>
+                    <div class="collapsible-body secondaryFiles">
+
+                        <label>SELECT PACKAGE</label>
+                        <select multiple class="packageSelect filled-in" >
+                          <option value="1" data-package="primary1">Option 1</option>
+                        </select>
+
+                      <div class="scWrap">
+
+                        <div class="fileCapsule valign-wrapper">
+                            <label>
+                              <input type="checkbox" class="filled-in" data-bind="myimage.jpg" />
+                              <span></span>
+                            </label>
+                            <div class="imgWrapper"><img src="assets/images/logos/ps-logo.png"></div>
+                            <div class="filenameWrapper">
+                              <p class="fnTitle">mainsource.psd</p>
+                              <p class="fnInfo">700 x 333 px | 101 KB</p>
+                            </div>
+                        </div>
+
+                        <div class="fileCapsule valign-wrapper">
+                            <label>
+                              <input type="checkbox" class="filled-in" data-bind="myimage.jpg" />
+                              <span></span>
+                            </label>
+                            <div class="imgWrapper"><img src="assets/images/logos/ai-logo.png"></div>
+                            <div class="filenameWrapper">
+                              <p class="fnTitle">mainsource.ai</p>
+                              <p class="fnInfo">700 x 333 px | 101 KB</p>
+                            </div>
+                        </div>
+
+                      </div>
+
+                      <div class="fileBatchCapwWrSc"></div>
+                      <button id="addFilesSec" action="assets/uploads"  method="post" enctype="multipart/form-data" class="btn btn-grey addFiles dropzone" multiple>
+                        <i class="fa fa-plus"></i>
+                        ADD FILES
+                        <div class="dz-message"></div>
+                      </button>
+
+                    </div>
+                  </li> -->
+
+                </ul>
+
+              </form>
+
+            <button class="btn btn-primary saveBtn " type="submit" name="action">SAVE DETAILS </button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- bactch listing modal -->
+    <div id="batchListing" class="modal fullscreen sub">
+        <div class="modal-content">
+          <div class="asset-details">
+            <div class="modal-close right full">
+              <i class="material-icons">close</i>
+            </div>
+            <div class="row">
+              <div class="col m6 no-padding">
+                  <h2>ID: 395
+                        <span class="notTab right"><a href="#" class="hide-logs tooltipped" data-position="bottom"><i class="material-icons">arrow_downward</i></a></span>
+                  </h2>                
+              </div> 
+              <div class="col m12 no-padding" id="batchListWrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Asset Code</th>
+                        <th>Reason</th>
+                        <th>Comment</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>XAD013456</td>
+                        <td>Some reason goes here</td>
+                        <td>Some comments goes here</td>
+                        <td class="active"><i class="material-icons">fiber_manual_record</i> Active</td>
+                      </tr>
+                      <tr>
+                        <td>XAD013456</td>
+                        <td>Some reason goes here</td>
+                        <td>Some comments goes here</td>
+                        <td class="active"><i class="material-icons">fiber_manual_record</i> Active</td>
+                      </tr>
+                      <tr>
+                        <td>XAD013456</td>
+                        <td>Some reason goes here</td>
+                        <td>Some comments goes here</td>
+                        <td class="deactivated"><i class="material-icons">fiber_manual_record</i> Deactivated</td>
+                      </tr>
+                      <tr>
+                        <td>XAD013456</td>
+                        <td>Some reason goes here</td>
+                        <td>Some comments goes here</td>
+                        <td class="active"><i class="material-icons">fiber_manual_record</i> Active</td>
+                      </tr>
+                      <tr>
+                        <td>XAD013456</td>
+                        <td>Some reason goes here</td>
+                        <td>Some comments goes here</td>
+                        <td class="disable"><i class="material-icons">fiber_manual_record</i> Disable</td>
+                      </tr>
+                      <tr>
+                        <td>XAD013456</td>
+                        <td>Some reason goes here</td>
+                        <td>Some comments goes here</td>
+                        <td class="deactivated"><i class="material-icons">fiber_manual_record</i> Deactivated</td>
+                      </tr>
+                      <tr>
+                        <td>XAD013456</td>
+                        <td>Some reason goes here</td>
+                        <td>Some comments goes here</td>
+                        <td class="active"><i class="material-icons">fiber_manual_record</i> Active</td>
+                      </tr>
+                      <tr>
+                        <td>XAD013456</td>
+                        <td>Some reason goes here</td>
+                        <td>Some comments goes here</td>
+                        <td class="active"><i class="material-icons">fiber_manual_record</i> Active</td>
+                      </tr>
+                      <tr>
+                        <td>XAD013456</td>
+                        <td>Some reason goes here</td>
+                        <td>Some comments goes here</td>
+                        <td class="active"><i class="material-icons">fiber_manual_record</i> Active</td>
+                      </tr>
+                      <tr>
+                        <td>XAD013456</td>
+                        <td>Some reason goes here</td>
+                        <td>Some comments goes here</td>
+                        <td class="deactivated"><i class="material-icons">fiber_manual_record</i> Deactivated</td>
+                      </tr>
+                      <tr>
+                        <td>XAD013456</td>
+                        <td>Some reason goes here</td>
+                        <td>Some comments goes here</td>
+                        <td class="disable"><i class="material-icons">fiber_manual_record</i> Disable</td>
+                      </tr>
+                      <tr>
+                        <td>XAD013456</td>
+                        <td>Some reason goes here</td>
+                        <td>Some comments goes here</td>
+                        <td class="deactivated"><i class="material-icons">fiber_manual_record</i> Deactivated</td>
+                      </tr>
+                      <tr>
+                        <td>XAD013456</td>
+                        <td>Some reason goes here</td>
+                        <td>Some comments goes here</td>
+                        <td class="active"><i class="material-icons">fiber_manual_record</i> Active</td>
+                      </tr>
+                    </tbody>
+                  </table>             
+              </div> 
+          
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Save Filters Modal -->
+    <div id="save-filters" class="modal modal-small">
+      <div class="modal-content">
+        <h3>Save filter<a class="modal-close right"><i class="material-icons">close</i></a></h3>
+        <div class="input-field">
+          <input placeholder="Enter a name of the filter" id="Filter name" type="text" class="validate">
+          <label for="Filter name">NAME</label>
+        </div>
+        <div class="input-field">
+          <textarea id="share" class="materialize-textarea" placeholder="Enter receipent's email"></textarea>
+          <label for="share">SHARE</label>
+        </div>
+      <a href="#" onclick="M.toast({html: 'Filter Saved!', displayLength: 4000})" class="modal-close btn btn-primary right" id="save-filter-info">Save</a>
+      <div class="clearfix"></div>
+      </div>
+    </div>
+
+     <!-- batchupload modal -->
+    <div id="batchUpload" class="modal modal-medium">
+      <div class="modal-content">
+        <h3>Batch upload<a class="modal-close right"><i class="material-icons">close</i></a>
+          <a class="right downloadTemplate tooltipped" data-position="left"><span class="tooltiptext">Download template</span><span class="templateIcon"></span></a></h3>
+        <div class="model-main">
+            <form name="batchuploadForm">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input placeholder="eg: ftp.2adpro.com" id="ftpserver" type="text" class="validate">
+                  <label for="ftpserver">FTP SERVER</label>
+                </div>
+                <div class="input-field col s6">
+                  <input placeholder="eg: shivakris" id="fusername" type="text" class="validate">
+                  <label for="fusername">USER NAME</label>
+                </div>
+              </div>
+
+              <div class="row mb10">
+                <div class="input-field col s6">
+                  <input placeholder="Placeholder" id="ftpfolder" type="text" class="validate">
+                  <label for="ftpfolder">FTP FOLDER</label>
+                </div>
+                <div class="input-field col s6">
+                  <input placeholder="eg: public_html/root" id="fpassword" type="password" class="validate">
+                  <label for="fpassword">PASSWORD</label>
+                </div>
+              </div>
+            </form>
+
+              <div class="row mb10">
+                <div class="input-field col s6">
+                  <div id="fileUploadBForm">
+                    <form id="myFile" action="assets/uploads"  method="post" enctype="multipart/form-data"class="dropzone btn btn-high btn-full btn-dotted">
+                      <span class="sprite"></span>
+                      &nbsp;&nbsp;UPLOAD OR DRAG TEMPLATE
+                      <div class="dz-message"></div>
+                    </form>
+                    <div class="fileBatchCapwWr"></div>
+                  </div>
+                </div>
+                <div class="input-field col s6">
+                  <button class="btn btn-primary btn-high btn-full">START BATCH UPLOAD</button>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Import jQuery -->
+    <script src="assets/js/jquery-2.1.1.min.js"></script>         
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> -->
+    <script src="assets/js/materialize.js"></script>
+    <script src="assets/js/dropzone.js"></script>
+    <!-- <script src="assets/js/jquery.fileupload.js"></script> -->
+    <script type="text/javascript" src="assets/js/nanobar.js"></script>    
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/TweenMax.min.js"></script> -->
+    <!-- <script type="text/javascript" src="assets/js/joinable.js"></script> -->
+  </body>
+</html>
